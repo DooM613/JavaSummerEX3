@@ -6,12 +6,13 @@ public class Utilit {
 
 
     public static void sumArrayList (){
-       // Main.integers3.add(Main.integers2.get(Main.num));
 
 
-        Main.integers3.add(Main.integers.get(Main.i) * Main.integers1.get(Main.i));
+        for( int i=0 ; i < Main.integers2.size(); i++){
 
+            Main.integers3.add(Main.integers.get(i) * Main.integers1.get(i));
 
+        }
         System.out.println(Main.integers3);
     }
 

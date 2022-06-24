@@ -13,10 +13,10 @@ public class Main {
 
    static ArrayList<Integer> integers3 = new ArrayList<>();
 
-   static int i;
+
 
     public void generateLists(int num) {
-        for (  i = 0; i < num; i++) {
+        for (  int i = 0; i < num; i++) {
 
             integers.add(new Random().nextInt(0, 10));
             integers1.add(new Random().nextInt(0, 10));
@@ -42,14 +42,10 @@ public class Main {
 
     public static void main(String[] args) {
         Main main = new Main();
-
-        Utilit utilit = new Utilit();
-
         main.generateLists(3);
-
         main.print();
 
-        utilit.sumArrayList();
+        Utilit.sumArrayList();
 
     }
 
